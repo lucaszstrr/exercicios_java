@@ -10,18 +10,27 @@ public class Calculadora {
         System.out.println("Digite outro numero: ");
         int valorDois = scanner.nextInt();
 
-
-        int soma = valorUm + valorDois;
-        int sub = valorUm - valorDois;
-        int mult = valorUm * valorDois;
-        int div = valorUm / valorDois;
-
-        System.out.println("O resultado da soma é: " + soma);
-        System.out.println("O resultado da subtração é: " + sub);
-        System.out.println("O resultado da multiplicação é: " + mult);
-        System.out.println("O resultado da divisão é: " + div);
-
-
         scanner.close();
+
+        System.out.println("O resultado da soma é: " + soma(valorUm, valorDois));
+        System.out.println("O resultado da subtração é: " + sub(valorUm, valorDois));
+        System.out.println("O resultado da multiplicação é: " + mult(valorUm, valorDois));
+        System.out.println("O resultado da divisão é: " + div(valorUm, valorDois));
+    }
+
+    private static int soma(int valorUm, int valorDois){
+        return valorUm + valorDois;
+    }
+
+    private static int sub(int valorUm, int valorDois){
+        return valorUm - valorDois;
+    }
+
+    private static int mult(int valorUm, int valorDois){
+        return valorUm * valorDois;
+    }
+
+    private static int div(int valorUm, int valorDois){
+        return valorUm / valorDois;
     }
 }
