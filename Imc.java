@@ -14,12 +14,16 @@ public class Imc {
 
         double peso = scanner.nextDouble();
 
+        System.out.println("Seu IMC é de " + imc(altura, peso));
+
+        scanner.close();
+    }
+
+    private static String imc(double altura, double peso){
         double imc = peso / Math.pow(altura, 2);
 
         String imcFormatado = String.format("%.2f", imc);
-
-        System.out.println("Seu IMC é de " + imcFormatado);
-
-        scanner.close();
+    
+        return imcFormatado;
     }
 }
